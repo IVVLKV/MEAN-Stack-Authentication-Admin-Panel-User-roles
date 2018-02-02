@@ -1,0 +1,14 @@
+<form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+  <h3>Login</h3>
+  <div>
+      <input placeholder="Email" formControlName="email">
+  </div>    
+  <div>
+      <input matInput placeholder="Password" formControlName="password">
+  </div>
+  <div>
+    <button type="submit">Login</button>
+  </div>
+  <p class="error-text">{{auth.errorText}}</p>
+  <p>Dont have an account? <a routerLink="/register">[Register]</a></p>
+</form>

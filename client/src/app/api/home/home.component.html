@@ -1,0 +1,7 @@
+<header *ngIf="role | async as userRole" >
+  <button *ngIf="userRole == 'admin'"  routerLink="./admin">Admin Panel</button>
+  <button routerLink="./tickets">Tickets</button>
+  <p>Hi {{auth.name()}}. <a (click)="auth.logout()">[Logout]</a></p>
+</header>
+
+<router-outlet></router-outlet>
