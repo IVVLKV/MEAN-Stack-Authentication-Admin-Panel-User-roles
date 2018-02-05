@@ -7,8 +7,8 @@ import { AdminComponent } from './api/admin/admin/admin.component';
 import { TicketsComponent } from './api/tickets/tickets.component';
 import { HomeComponent } from './api/home/home.component';
 
-import { AuthGuardService } from './guards/auth-guard.service';
-import { AdminGuardService } from './guards/admin-guard.service';
+import { AuthGuardService } from './authentication/auth-guard.service';
+import { AdminGuardService } from './api/admin/admin-guard.service';
 
 const appRoutes: Routes = [
   { path: '',
